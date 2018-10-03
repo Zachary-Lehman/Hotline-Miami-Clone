@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "34959dca-799f-4063-be6a-b2f509852d3e",
+            "Value": {
+                "id": "28aa5e75-9589-4c2c-8da6-e732e43940a1",
+                "resourcePath": "objects\\obj_homing_missle\\obj_homing_missle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3ea3437f-36a8-437d-9882-16d5df02a367",
             "Value": {
                 "id": "d3a97978-1256-4ec7-b0c3-159e71a6cad7",
@@ -123,6 +131,14 @@
             "Value": {
                 "id": "980c4d44-4023-4a98-87de-75ebd119c3e9",
                 "resourcePath": "sprites\\spr_asteroid_exploding\\spr_asteroid_exploding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "641847dc-fc1b-4e74-98f6-c912af9b76f6",
+            "Value": {
+                "id": "063b92d4-81ad-4531-ba5d-18b37d27213c",
+                "resourcePath": "sprites\\spr_player_moving\\spr_player_moving.yy",
                 "resourceType": "GMSprite"
             }
         },
