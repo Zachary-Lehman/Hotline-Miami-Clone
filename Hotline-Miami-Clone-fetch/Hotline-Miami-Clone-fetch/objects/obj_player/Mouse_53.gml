@@ -24,6 +24,8 @@ can_shoot_shotgun = false;
 alarm_set(1, 25);
 global.shells -= 1;
 audio_play_sound(snd_shotgun, 0, false);
+shake = true;
+alarm_set(3, 15);
 if (collision_circle(x, y, 300, obj_enemy_human, false, true)){
 global.searching = true;
 global.search_x = obj_player.x;
