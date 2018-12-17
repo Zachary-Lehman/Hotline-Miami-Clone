@@ -7,3 +7,6 @@ global.search_y = 0;
 path = path_add();
 pos_y = 0;
 pos_x = 0;
+searching = false;
+search_x = 0; 
+search_y = 0;

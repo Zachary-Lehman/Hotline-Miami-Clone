@@ -1,2 +1,2 @@
 //changes to shotgun
-gun = 3;
+global.gun = 3;

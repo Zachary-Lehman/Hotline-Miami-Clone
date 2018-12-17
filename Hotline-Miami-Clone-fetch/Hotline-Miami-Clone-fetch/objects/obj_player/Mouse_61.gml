@@ -1,4 +1,4 @@
 //switches weapon
-if (gun > 1){
-gun -= 1
+if (global.gun > 1){
+global.gun -= 1
 }

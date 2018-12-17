@@ -1,2 +1,2 @@
 //changes to pistol
-gun = 1;
+global.gun = 1;

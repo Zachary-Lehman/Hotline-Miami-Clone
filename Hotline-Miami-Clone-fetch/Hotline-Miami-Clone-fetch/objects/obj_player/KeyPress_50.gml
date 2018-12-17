@@ -1,2 +1,2 @@
 //changes to smg
-gun = 2;
+global.gun = 2;

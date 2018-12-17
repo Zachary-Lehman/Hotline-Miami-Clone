@@ -1,10 +1,15 @@
+
+search_x = global.search_x;
+search_y = global.search_y;
+searcing = global.searching;
 //LOF tracks player
 if (enemy_human_health <= 0){
 instance_destroy();	
 }
-if (global.searching = true){
+
+if (searching = true){
 if (place_free(x,y)){	
-if (mp_grid_path(global.grid, path, x, y, global.search_x, global.search_y, true)){
+if (mp_grid_path(global.grid, path, x, y, search_x, search_y, true)){
 path_start(path, 6, path_action_stop, true);
 image_angle = direction;
 }
@@ -39,6 +44,9 @@ image_angle = point_direction(x, y, obj_player.x, obj_player.y);
 global.search_x = obj_player.x;
 global.search_y = obj_player.y;
 global.searching = true;
+search_x = global.search_x;
+search_y = global.search_y;
+searching = global.searching; 
 if (speed = 0){
 direction = point_direction(x, y, obj_player.x, obj_player.y);	
 speed = 6;

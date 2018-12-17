@@ -1,5 +1,5 @@
 //shotgun setup
-if (gun = 3){
+if (global.gun = 3){
 if (can_shoot_shotgun = true){	
 if (global.shells > 0){
 var bulletid; 
@@ -25,7 +25,7 @@ alarm_set(1, 25);
 global.shells -= 1;
 audio_play_sound(snd_shotgun, 0, false);
 shake = true;
-alarm_set(3, 15);
+alarm_set(3, 5);
 if (collision_circle(x, y, 300, obj_enemy_human, false, true)){
 global.searching = true;
 global.search_x = obj_player.x;
@@ -35,7 +35,7 @@ global.search_y = obj_player.y;
 }
 }
 //pistol setup
-if (gun = 1){	
+if (global.gun = 1){	
 if(can_shoot_pistol = true){	
 instance_create_depth(x, y, 0, obj_bullet);
 can_shoot_pistol = false;

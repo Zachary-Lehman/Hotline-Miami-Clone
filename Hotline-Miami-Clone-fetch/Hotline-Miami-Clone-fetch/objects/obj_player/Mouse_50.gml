@@ -1,5 +1,5 @@
 //smg setup
-if(gun = 2){
+if(global.gun = 2){
 if (can_shoot_smg = true){
 if (global.ammo > 0){	
 timeline_index = time_smg;
