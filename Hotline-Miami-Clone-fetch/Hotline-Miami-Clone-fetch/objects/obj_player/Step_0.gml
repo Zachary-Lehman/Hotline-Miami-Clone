@@ -9,12 +9,15 @@ game_restart();
 window_set_cursor(cr_none);
 if (global.gun = 1){
 cursor_sprite = spr_crosshair;
+sprite_index = spr_player;
 }
 if (global.gun = 2){
 cursor_sprite = spr_crosshair_smg;
+sprite_index = spr_player;
 }
 if (global.gun = 3){
 cursor_sprite = spr_crosshair_shotgn;
+sprite_index = spr_player_shotgun;
 }
 if (!collision_circle(x, y, 32, obj_LOF, true, false)){
 global.collision = false;	
@@ -35,11 +38,6 @@ instance_create_depth(512, 383, 0, obj_door);
 if (room = room_3){
 if (instance_number(obj_enemy_human) <= 0){
 instance_create_depth(988, 383, 0, obj_door);	
-}
-}
-if (room = room_2){
-if (instance_number(obj_enemy_human) <= 0){
-instance_create_depth(64, 381, 0, obj_door);	
 }
 }
 //follows player

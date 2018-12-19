@@ -1,7 +1,6 @@
-
 search_x = global.search_x;
 search_y = global.search_y;
-searcing = global.searching;
+searching = global.searching;
 //LOF tracks player
 if (enemy_human_health <= 0){
 instance_destroy();	
@@ -12,29 +11,6 @@ if (place_free(x,y)){
 if (mp_grid_path(global.grid, path, x, y, search_x, search_y, true)){
 path_start(path, 6, path_action_stop, true);
 image_angle = direction;
-}
-if (!place_free(x,y)){
-path_endaction = path_action_stop;
-if (global.collision = true){
-if (global.search_x > obj_wall.x - 32 && global.search_x < obj_wall.x + 32){	
-pos_x = irandom(2);
-if (pos_x = 1){
-global.search_x += 50;
-}
-if (pos_x = 2){
-global.search_x -= 50;
-}
-if (global.search_y > obj_wall.y - 32 && global.search_y < obj_wall.y + 32){
-pos_y = irandom(2);
-if (pos_y = 1){
-global.search_y += 50;
-}
-if (pos_y = 2){
-global.search_y -= 50;
-}
-}
-}
-}
 }
 }
 }
