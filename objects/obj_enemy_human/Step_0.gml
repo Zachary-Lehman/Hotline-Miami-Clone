@@ -31,10 +31,10 @@ search_x = global.search_x;
 search_y = global.search_y;
 searching = global.searching; 
 if (!place_free(search_x,search_y)){
-path_endaction = path_action_stop;
+path_end();
 }
 if (!place_free(x,y)){
-path_endaction = path_action_stop;
+path_end();
 }
 if (enemy_can_shoot = true){
 instance_create_depth(x, y, 0, obj_bullet_enemy);
@@ -61,10 +61,10 @@ direction = point_direction(x, y, obj_zombie.x, obj_zombie.y);
 speed = 6;
 }
 if (!place_free(x,y)){
-path_endaction = path_action_stop;
+path_end();
 }
 if (!place_free(search_x,search_y)){
-path_endaction = path_action_stop;
+path_end();
 }
 if (collision_circle(x, y, 200, obj_zombie, false, true)){
 path_end();
