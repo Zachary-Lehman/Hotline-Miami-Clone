@@ -17,5 +17,6 @@ if (mp_grid_path(global.grid, path, x, y , obj_player.x, obj_player.y, true)){
 path_start(path, 3, path_action_stop, true);	
 }
 }
+image_angle = direction + 90;
 
 

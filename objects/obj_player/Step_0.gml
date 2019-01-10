@@ -35,10 +35,5 @@ if (instance_number(obj_enemy_human) <= 0){
 instance_create_depth(512, 383, 0, obj_door);	
 }
 }
-if (room = room_3){
-if (instance_number(obj_enemy_human) <= 0){
-instance_create_depth(988, 383, 0, obj_door);	
-}
-}
 //follows player
 camera_set_view_pos(view_camera[0], x - 512, y - 383);

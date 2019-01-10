@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "2570d63f-9707-436b-a4f7-6be2a6c2cded",
+            "Value": {
+                "id": "11343967-a287-4003-935b-497155756e7c",
+                "resourcePath": "objects\\obj_soilder_spawner\\obj_soilder_spawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "307f927c-49a9-4f40-ad27-811cd63eda6d",
             "Value": {
                 "id": "b13c698c-913f-4e55-bc27-63995fa1f761",
@@ -260,6 +268,14 @@
                 "id": "d21bdab5-ed8a-4a7a-bf21-36256d3295ea",
                 "resourcePath": "views\\783b1df4-3f3c-4742-89e3-27955a87e926.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "79c1ba48-636d-49df-989e-6d059a62a2ae",
+            "Value": {
+                "id": "05a6fda5-858e-48e8-b5fa-41bc363e64ff",
+                "resourcePath": "objects\\obj_zombie_spawner\\obj_zombie_spawner.yy",
+                "resourceType": "GMObject"
             }
         },
         {
