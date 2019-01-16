@@ -7,6 +7,6 @@ if (speed = 0){
 sprite_index = spr_g;
 mask_index = spr_g;
 }
-if (collision_circle(x, y, 35, obj_wall, true, true)){
+if (collision_circle(x, y, 15, obj_wall, true, true)){
 direction -= 180;	
 }
