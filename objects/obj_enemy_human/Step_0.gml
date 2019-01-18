@@ -38,22 +38,9 @@ alarm_set(0, 30);
 if (collision_circle(x, y, 500, obj_zombie, false, true)){
 if (!collision_line(x, y, obj_zombie.x, obj_zombie.y, obj_LOF, 0, 1)){
 image_angle = point_direction(x, y, obj_zombie.x, obj_zombie.y);
-global.search_x = obj_zombie.x;
-global.search_y = obj_zombie.y;
-global.searching = true;
-search_x = global.search_x;
-search_y = global.search_y;
-searching = global.searching; 
-if (speed = 0){
-direction = point_direction(x, y, obj_zombie.x, obj_zombie.y);	
-speed = 6;
-}
-if (!place_free(x,y)){
-path_end();
-}
-if (!place_free(search_x,search_y)){
-path_end();
-}
+search_x = obj_zombie.x;
+search_y = obj_zombie.y;
+searching = true;
 if (collision_circle(x, y, 200, obj_zombie, false, true)){
 path_end();
 }
@@ -70,5 +57,7 @@ search_y = obj_player.y;
 searching = true;
 }
 if (collision_circle(x, y, 7, obj_wall, true, true)){
-searching = false;	
+searching = false;
+x += 40; 
+y += 40;
 }
