@@ -17,11 +17,6 @@ path_end();
 }
 }
 }
-if (instance_exists(obj_zombie)){
-if ((x - obj_player.x) + (y - obj_player.y) 
-> 
-(x - obj_zombie.x) + (y - obj_zombie.y))
-{
 //attacks player
 if (collision_circle(x, y, 500, obj_player, false, true)){
 if (!collision_line(x, y, obj_player.x, obj_player.y, obj_LOF, 0, 1)){
@@ -36,8 +31,6 @@ if (enemy_can_shoot = true){
 instance_create_depth(x, y, 0, obj_bullet_enemy);
 enemy_can_shoot = false;
 alarm_set(0, 30);	
-}
-}
 }
 }
 }
