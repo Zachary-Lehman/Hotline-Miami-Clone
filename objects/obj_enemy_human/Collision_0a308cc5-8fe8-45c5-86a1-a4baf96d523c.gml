@@ -1,0 +1,1 @@
+enemy_human_health -= .5;
