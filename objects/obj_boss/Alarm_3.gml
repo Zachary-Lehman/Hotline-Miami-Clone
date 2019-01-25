@@ -1,0 +1,1 @@
+instance_create_depth(x + 350, y, 0, obj_rubble);
