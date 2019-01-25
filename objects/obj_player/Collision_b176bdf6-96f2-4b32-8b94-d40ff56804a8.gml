@@ -1,0 +1,1 @@
+global.collision = true;
